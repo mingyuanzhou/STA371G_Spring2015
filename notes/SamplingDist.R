@@ -1,4 +1,3 @@
-attach(mtcars)
 par(mfrow=c(2,2))
 x = rnorm(10000,200,100)
 plot(x)
