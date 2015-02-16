@@ -12,7 +12,7 @@ SLG=data[,5]
 #RG (runs per game)
 RG=data[,16]
 
-attach(mtcars)
+
 par(mfrow=c(1,3))
 
 AVGfit=lm(formula=RG~AVG)
