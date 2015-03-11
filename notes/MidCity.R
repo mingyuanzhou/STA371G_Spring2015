@@ -34,3 +34,11 @@ plot(SqFt,MidCity$residuals,xlab="Size")
 points(SqFt[dn1],MidCity$residuals[dn1],col=2,pch=19)
 points(SqFt[dn2],MidCity$residuals[dn2],col=3,pch=19)
 points(SqFt[dn3],MidCity$residuals[dn3],col=4,pch=19)
+
+MidCity = lm(Price~dn1+dn2+SqFt+Offers+Brick+Bedrooms+Bathrooms)
+
+MidCity = lm(Price~dn1+dn2+SqFt+Brick+Bedrooms+Bathrooms)
+
+MidCity = lm(Offers~dn1+dn2+SqFt+Price+Brick+Bedrooms+Bathrooms)
+
+summary(MidCity)
