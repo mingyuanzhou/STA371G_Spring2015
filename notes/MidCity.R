@@ -39,6 +39,8 @@ MidCity = lm(Price~dn1+dn2+SqFt+Offers+Brick+Bedrooms+Bathrooms)
 
 MidCity = lm(Price~dn1+dn2+SqFt+Brick+Bedrooms+Bathrooms)
 
+MidCity = lm(Price~dn2+dn3+SqFt+Brick+Bedrooms+Bathrooms)
+
 MidCity = lm(Offers~dn1+dn2+SqFt+Price+Brick+Bedrooms+Bathrooms)
 
 summary(MidCity)
